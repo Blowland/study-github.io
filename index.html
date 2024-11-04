@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 Study Guide</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Grade 6 Study Guide</h1>
+        <button id="homeButton" onclick="goHome()">Home</button>
+    </header>
+
+    <!-- Subject Selection -->
+    <section id="subjectSelection">
+        <h2>Select a Subject</h2>
+        <button onclick="selectSubject('Math')">Math</button>
+        <button onclick="selectSubject('Science')">Science</button>
+        <button onclick="selectSubject('English')">English</button>
+        <button onclick="selectSubject('History')">History</button>
+    </section>
+
+    <!-- Category Selection (Tests, Explanation Worksheets, Practice) -->
+    <section id="categorySelection" style="display: none;">
+        <h2 id="subjectTitle"></h2>
+        <button onclick="selectCategory('Tests')">Tests</button>
+        <button onclick="selectCategory('Explanation Worksheets')">Explanation Worksheets</button>
+        <button onclick="selectCategory('Practice')">Practice</button>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <!-- Topic Selection -->
+    <section id="topicSelection" style="display: none;">
+        <h2 id="categoryTitle"></h2>
+        <button onclick="selectTopic('Decimals')">Decimals</button>
+        <button onclick="selectTopic('Fractions')">Fractions</button>
+        <button onclick="selectTopic('Algebra')">Algebra</button>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <!-- Subtopic Selection -->
+    <section id="subtopicSelection" style="display: none;">
+        <h2 id="topicTitle"></h2>
+        <button onclick="selectSubtopic('Organizing Decimals')">Organizing Decimals</button>
+        <button onclick="selectSubtopic('Comparing Decimals')">Comparing Decimals</button>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <!-- Sort by Date or Difficulty -->
+    <section id="sortSelection" style="display: none;">
+        <h2>Sort Worksheets by:</h2>
+        <button onclick="sortWorksheets('Date')">Date</button>
+        <button onclick="sortWorksheets('Difficulty')">Difficulty</button>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <!-- Worksheets Display -->
+    <section id="worksheetsDisplay" style="display: none;">
+        <h2>Worksheets</h2>
+        <div class="worksheet" onclick="showWorksheet('Worksheet 1')">Worksheet 1</div>
+        <div class="worksheet" onclick="showWorksheet('Worksheet 2')">Worksheet 2</div>
+        <div class="worksheet" onclick="showWorksheet('Worksheet 3')">Worksheet 3</div>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <!-- Expanded Worksheet View -->
+    <section id="expandedWorksheet" style="display: none;">
+        <h2 id="worksheetTitle">Worksheet</h2>
+        <img src="images/example.png" alt="Worksheet Image" id="worksheetImage">
+        <button onclick="showExplanation()">Show Explanation</button>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

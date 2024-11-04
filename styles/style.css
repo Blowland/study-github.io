@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #0073e6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+section {
+    display: block;
+    margin-top: 20px;
+}
+
+.worksheet {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.worksheet:hover {
+    background-color: #e6f0ff;
+}
+
+#worksheetImage {
+    width: 80%;
+    max-width: 500px;
+    margin: 10px 0;
+}
